@@ -1,11 +1,5 @@
 #include "main.h"
-/* more headers goes there */
-/* betty style doc for function main goes there */
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+/**   * print_alphabet - Make the alphabet   *   * Return: void   */
 void print_alphabet(void)
 {
 	char c = 'a';
