@@ -9,8 +9,9 @@
 int main(void)
 {
 	char *s = "_putchar\n";
-	
-	while(*s){
+
+	while (*s)
+	{
 		_putchar(*s);
 		s++;
 	}
