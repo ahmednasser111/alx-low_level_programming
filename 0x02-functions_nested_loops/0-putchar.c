@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /**
@@ -10,6 +8,11 @@
  */
 int main(void)
 {
-	printf("_putchar");
+	int i = 0;
+	char *s = "_putchar\n";
+	
+	for (; i < s.size(); i++){
+		_putchar(s[i);
+	}
 	return (0);
 }
