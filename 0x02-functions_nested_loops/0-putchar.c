@@ -8,11 +8,10 @@
  */
 int main(void)
 {
-	int i = 0;
 	char *s = "_putchar\n";
 	
-	for (; i < s.size(); i++){
-		_putchar(s[i);
+	while(*s++){
+		_putchar(*s);
 	}
 	return (0);
 }
