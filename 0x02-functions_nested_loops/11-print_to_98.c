@@ -11,12 +11,9 @@ void print_to_98(int n)
 
 	if (n > 98)
 		i = -1;
-	while (n != 98)
+	for (; n != 98; n+=i)
 	{
-		_putchar(n);
-		_putchar(',');
-		_putchar(' ');
-		n += i;
+		printf("%d, ", n);
 	}
 	_putchar('9');
 	_putchar('8');
