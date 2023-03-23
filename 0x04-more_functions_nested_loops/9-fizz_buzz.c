@@ -22,4 +22,5 @@ int main(void)
 		if (i != 100)
 			putchar(' ');
 	}
+	return (0);
 }
