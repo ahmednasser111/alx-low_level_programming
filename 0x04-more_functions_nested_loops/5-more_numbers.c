@@ -9,8 +9,9 @@ void more_numbers(void)
 {
 	int i = 0;
 
-	print_numbers();
-	for (; i < 5; i++)
+	for (; i < 10; i++)
+		_putchar(i + '0');
+	for (i = 0; i < 5; i++)
 	{
 		_putchar('1');
 		_putchar(i + '0');
