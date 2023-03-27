@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * rev_string - get a string in reverse order
@@ -7,17 +8,9 @@
  */
 void rev_string(char *s)
 {
-	int n = 0, i = 0;
-	char *sb = *s;
+	int n = strlen(s), i = 0;
 
-	while (*s)
-	{
-		n++;
-		s++;
-	}
 	for (; i < n / 2; i++)
-	{
-		*(sb + i) = *(sb - n - i - 1);
-	}
+		s[i] = s[n - i - 1];
 	putchar('\n');
 }
