@@ -10,8 +10,9 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	if (n < 0)
+	if (n < 1)
 	{
+		putchar('\n');
 		return;
 	}
 	for (; i < n - 1; i++)
