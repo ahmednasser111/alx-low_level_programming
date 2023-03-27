@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /**
  * puts2 - prints a string
  * @str: string
@@ -7,10 +7,12 @@
  */
 void puts2(char *str)
 {
-	while (*str)
+	int i = 0;
+
+	for (; i < strlen(str); i += 2)
 	{
 		putchar(*str);
-		str += 2;
+		str+=2;
 	}
 	putchar('\n');
 }
