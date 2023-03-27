@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	int i = sqrt(612852475143);
-
-	for (; i >= 2; i--)
-		if (612852475143 % i == 0)
+	
+	long n = 612852475143;
+	long i = n / 2;
+	for (; i > 2; i--)
+		if (n % i == 0)
 		{
-			printf("%d\n", i);
+			printf("%ld\n", i);
 			break;
 		}
 	return (0);
