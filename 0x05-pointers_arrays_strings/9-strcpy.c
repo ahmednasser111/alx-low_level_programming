@@ -12,6 +12,6 @@ char *_strcpy(char *dest, char *src)
 
 	for (; i < n; i++)
 		dest[i] = src[i];
-	*dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
