@@ -9,10 +9,11 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int n = 0;
+	int n = 0, i = 0;
+
 	while (dest[n])
 		n++;
-	for (int i = 0; src[i] != '\0'; i++)
+	for (; src[i] != '\0'; i++)
 	{
 		dest[n] = src[i];
 		n++;
