@@ -3,16 +3,16 @@
 #include <string.h>
 /**
  * string_toupper - uppercase the string
- * @s: string
+ * @p: string
  *
  * Return: string
  */
-char *string_toupper(char *s)
+char *string_toupper(char *p)
 {
-	int i = 0;
+	int i = 0, n = strlen(p);
 
-	for (; i < strlen(s); i++)
-		if (s[i] > 96 && s[i] < 123)
-			s[i] -= 32;
-	return (s);
+	for (; i < n; i++)
+		if (p[i] > 96 && p[i] < 123)
+			p[i] -= 32;
+	return (p);
 }
