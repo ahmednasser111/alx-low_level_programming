@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _print_rev_recursion - prints a string in reverse order
+ * _strlen_recursion - returns size of string
  * @s: string
  *
- * Return - void
+ * Return: int size of string
  */
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
-		return 0;
-	return 1 + _strlen_recursion(++s);
+		return (0);
+	return (1 + _strlen_recursion(++s));
 }
