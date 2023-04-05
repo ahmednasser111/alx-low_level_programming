@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts_rev_recursion - prints a string in reverse order
+ * _print_rev_recursion - prints a string in reverse order
  * @s: string
  *
  * Return - void
  */
-void _puts_rev_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
