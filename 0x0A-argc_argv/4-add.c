@@ -11,11 +11,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int sum = 0, i = 1, j, n;
 
-	for (int i = 1; i < argc; i++)
+	for (; i < argc; i++)
 	{
-		for (int j = 0; j < strlen(argv[i]); j++)
+		n = strlen(argv[i]);
+		for (j = 0; j < n; j++)
 			if (argv[i][j] < 48 || argv[i][j] > 57)
 			{
 				printf("Error\n");
