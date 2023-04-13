@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 /**
   * malloc_checked - Allocates memory
@@ -10,7 +11,7 @@
   */
 void *malloc_checked(unsigned int b)
 {
-	void *p;
+	unsigned int *p;
 
 	p = malloc(b);
 
