@@ -1,22 +1,31 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
-#include <limits.h>
-
 /**
-  * malloc_checked - Allocates memory
-  * @b: the size to allocate
+  * _calloc - ...
+  * @nmemb: number of members
+  * @size: size
   *
-  * Return: Nothing.
+  * Return: ...
   */
-void *malloc_checked(unsigned int b)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *p;
+	int i = 0, l = 0;
+	char *p;
 
-	p = malloc(b);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	l = nmemb * size;
+	p = malloc(l);
 
 	if (p == NULL)
-		exit(98);
+		return (NULL);
+
+	while (i < l)
+	{
+		p[i] = 0;
+		i++;
+	}
 
 	return (p);
 }
