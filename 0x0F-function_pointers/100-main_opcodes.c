@@ -13,25 +13,25 @@ void print_opcodes(char *p, int n);
  */
 int main(int argc, char **argv)
 {
-      int n;
+	int n;
 
-      if (argc != 2)
-      {
-            printf("Error\n");
-            return (1);
-      }
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-      n = atoi(argv[1]);
+	n = atoi(argv[1]);
 
-      if (n < 0)
-      {
-            printf("Error\n");
-            return (2);
-      }
+	if (n < 0)
+	{
+		printf("Error\n");
+		return (2);
+	}
 
-      print_opcodes((char *)&main, n);
+	print_opcodes((char *)&main, n);
 
-      return (0);
+	return (0);
 }
 
 /**
@@ -44,14 +44,14 @@ int main(int argc, char **argv)
  */
 void print_opcodes(char *p, int n)
 {
-      int i;
+	int i;
 
-      for (i = 0; i < n; i++)
-      {
-            printf("%02hhx", *(p + i));
-            if (i < n - 1)
-                  printf(" ");
-      }
+	for (i = 0; i < n; i++)
+	{
+		printf("%02hhx", *(p + i));
+		if (i < n - 1)
+			printf(" ");
+	}
 
-      printf("\n");
+	printf("\n");
 }
