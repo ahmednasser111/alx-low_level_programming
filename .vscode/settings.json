@@ -1,0 +1,6 @@
+{
+      "files.associations": {
+            "*.c++": "cpp",
+            "variadic_functions.h": "c"
+      }
+}
