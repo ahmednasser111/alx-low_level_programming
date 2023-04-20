@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error: Wrong number of arguments\n");
-		return (98);
+		exit(98);
 	}
 
 	num1 = atoi(argv[1]);
@@ -31,13 +31,13 @@ int main(int argc, char *argv[])
 	if (op_func == NULL || argv[2][1] != '\0')
 	{
 		printf("Error: Invalid operator '%s'\n", argv[2]);
-		return (99);
+		exit(99);
 	}
 
 	if ((operator== '/' || operator== '%') && num2 == 0)
 	{
 		printf("Error: Can't divide/modulo by zero\n");
-		return (100);
+		exit(100);
 	}
 
 	result = op_func(num1, num2);
