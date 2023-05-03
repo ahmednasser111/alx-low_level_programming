@@ -1,7 +1,7 @@
 #include "lists.h"
 int pop_listint(listint_t **head)
 {
-	listint_t new_head;
+	listint_t *new_head;
 
 	if (*head == NULL)
 		return 0;
