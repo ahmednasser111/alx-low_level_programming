@@ -7,7 +7,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = strlen(b), uint = 0, i = 0;
+	unsigned int n = _strlen(b), uint = 0, i = 0;
 
 	if (b == NULL)
 		return (0);
@@ -20,4 +20,12 @@ unsigned int binary_to_uint(const char *b)
 			uint += pow(2, i);
 	}
 	return (uint);
+}
+int _strlen(const char *s)
+{
+	int c = 0;
+
+	while (s[c])
+		c++;
+	return (c);
 }
