@@ -2,7 +2,7 @@
 
 /**
  * get_endianness -
- *
+ * void
  *
  * Return: Integer value
  */
