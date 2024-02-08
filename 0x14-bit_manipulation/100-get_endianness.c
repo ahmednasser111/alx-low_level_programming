@@ -6,9 +6,10 @@
  *
  * Return: Integer value
  */
+
 int get_endianness(void)
 {
-	int n = 1;
+	unsigned int i;
 
-	return (*((char *)&n) + '0');
+	return ((int)(((char *)&i)[0]));
 }
