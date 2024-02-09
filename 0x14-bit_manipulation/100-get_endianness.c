@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_endianness -
+ * get_endianness - get endianness
  *
  * Description: This function checks the endianness of the system.
  *
