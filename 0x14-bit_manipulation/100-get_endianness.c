@@ -3,6 +3,7 @@
 /**
  * get_endianness -
  *
+ * Description: This function checks the endianness of the system.
  *
  * Return: Integer value
  */
